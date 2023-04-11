@@ -32,6 +32,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.rightPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.leftPanel.SuspendLayout();
@@ -72,12 +73,22 @@
             // 
             // rightPanel
             // 
+            this.rightPanel.Controls.Add(this.panel3);
             this.rightPanel.Controls.Add(this.panel1);
             this.rightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rightPanel.Location = new System.Drawing.Point(261, 0);
             this.rightPanel.Name = "rightPanel";
             this.rightPanel.Size = new System.Drawing.Size(812, 586);
             this.rightPanel.TabIndex = 1;
+            this.rightPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.rightPanel_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 100);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(812, 486);
+            this.panel3.TabIndex = 1;
             // 
             // panel1
             // 
@@ -125,6 +136,7 @@
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Panel panel3;
     }
 }
 

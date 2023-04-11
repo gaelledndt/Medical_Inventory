@@ -29,5 +29,11 @@ namespace MedicalInventory
                 label2.Text = "User";
             }
         }
+
+        private void rightPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
