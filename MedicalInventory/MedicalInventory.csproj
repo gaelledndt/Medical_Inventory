@@ -36,7 +36,8 @@
     <Reference Include="Authentification">
       <HintPath>..\Authentification\bin\Debug\Authentification.dll</HintPath>
     </Reference>
-    <Reference Include="CRUD">
+    <Reference Include="CRUD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CRUD\bin\Debug\CRUD.dll</HintPath>
     </Reference>
     <Reference Include="MainClass">

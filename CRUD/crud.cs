@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MainClass;
 using System.Data;
+using System.Windows.Forms;
 
 namespace CRUD
 {
@@ -22,6 +19,7 @@ namespace CRUD
                 foreach(DictionaryEntry item in hashtable) {
                     cmd.Parameters.AddWithValue(item.Key.ToString(), item.Value);
                 }
+             
                 mainClass.con.Open();
                 result = cmd.ExecuteNonQuery();
                 mainClass.con.Close();
@@ -32,6 +30,34 @@ namespace CRUD
                 throw;
             }
             return result;
+        }
+
+        public static void loadData (string proc, Hashtable hashtable, ListBox listBox, DataGridView dataGridView)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand (proc, mainClass.con);  
+                cmd.CommandType= CommandType.StoredProcedure;
+                foreach(DictionaryEntry item in hashtable)
+                {
+                    cmd.Parameters.AddWithValue(item.Key.ToString(),item.Value);
+                }
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                dataAdapter.Fill(dataTable);
+
+                for (int i = 0; i < listBox.Items.Count; i++)
+                {
+                    string colname = ((DataGridViewColumn)listBox.Items[i]).Name;
+                    dataGridView.Columns[colname].DataPropertyName = dataTable.Columns[i].ToString();
+                }
+                dataGridView.DataSource = dataTable;
+
+            }
+            catch (Exception ex) 
+            {
+                mainClass.ShowMSG(ex.Message, "error");
+            }
         }
     }
 }

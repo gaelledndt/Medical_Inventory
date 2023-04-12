@@ -24,8 +24,6 @@ C:\Users\Gaëlle\Documents\PPE\MedicalInventory\MedicalInventory\obj\Debug\Medic
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MedicalInventory.exe.config
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MedicalInventory.exe
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MedicalInventory.pdb
-C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\Authentification.dll
-C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MainClass.dll
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\Settings.dll
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\Authentification.pdb
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MainClass.pdb
@@ -45,5 +43,7 @@ C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\Medi
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.exe
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.pdb
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.RolesWindow.resources
-C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\CRUD.dll
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\CRUD.pdb
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\Authentification.dll
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\CRUD.dll
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MainClass.dll

@@ -26,7 +26,7 @@ namespace MedicalInventory
             }
             else
             {
-                label2.Text = "User";
+                label2.Text = "Votre compte utilisateur";
             }
         }
 

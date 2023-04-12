@@ -61,11 +61,16 @@ namespace MedicalInventory
                     {
 
                         mainClass.ShowMSG(roleTxt.Text + " added successfully into the system", "success");
-                        showData();
+                        Hashtable hashtable1 = new Hashtable();
+                        ListBox lb = new ListBox();
+                        lb.Items.Add(roleIdGV);
+                        lb.Items.Add(roleNameGV);
+                        crud.loadData("st_getRoles", hashtable1, lb, rolesGV);
+
                     }
                     else
                     {
-                        mainClass.ShowMSG("Unable to add " + roleTxt.Text + " in the system", "success");
+                        mainClass.ShowMSG("Unable to add " + roleTxt.Text + " in the system", "error");
                     }
                     mainClass.reset_disable(leftPanel);
 
@@ -96,14 +101,38 @@ namespace MedicalInventory
 
         private void RolesWindow_Load(object sender, EventArgs e)
         {
-            showData();
+            Hashtable hashtable = new Hashtable();
+            ListBox lb = new ListBox();
+            lb.Items.Add(roleIdGV);
+            lb.Items.Add(roleNameGV);
+            crud.loadData("st_getRoles", hashtable, lb, rolesGV);
 
         }
 
         public override void deleteBtn_Click(object sender, EventArgs e)
         {
        
+            if (edit == 1)
+            {
+                Hashtable hashtable = new Hashtable();              
+                hashtable.Add("@roleID", roleID);
+                int x = crud.insert_update_delete("st_deleteRoles", hashtable);
+
+                if (x > 0)
+                {
+
+                    mainClass.ShowMSG(roleTxt.Text + " delete successfully into the system", "success");
+                    showData();
+                }
+                else
+                {
+                    mainClass.ShowMSG("Unable to delete " + roleTxt.Text + " in the system", "success");
+                }
+                mainClass.reset_disable(leftPanel);
+            }
         }
+
+
         int roleID = 0;
         private void rolesGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

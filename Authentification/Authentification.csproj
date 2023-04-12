@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MainClass">
-      <HintPath>..\MainClass\bin\Debug\MainClass.dll</HintPath>
-    </Reference>
     <Reference Include="Settings">
       <HintPath>..\Settings\bin\Debug\Settings.dll</HintPath>
     </Reference>
@@ -49,6 +46,12 @@
   <ItemGroup>
     <Compile Include="Auth.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MainClass\MainClass.csproj">
+      <Project>{bd9f3e20-e68e-4c8a-aaec-59d633586244}</Project>
+      <Name>MainClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

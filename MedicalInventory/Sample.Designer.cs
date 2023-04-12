@@ -104,10 +104,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Britannic Bold", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label2.Location = new System.Drawing.Point(25, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 28);
+            this.label2.Size = new System.Drawing.Size(67, 30);
             this.label2.TabIndex = 0;
             this.label2.Text = "User";
             // 

@@ -32,16 +32,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Authentification">
-      <HintPath>..\..\MedicalInventory\Authentification\bin\Debug\Authentification.dll</HintPath>
+      <HintPath>..\Authentification\bin\Debug\Authentification.dll</HintPath>
     </Reference>
     <Reference Include="MainClass">
-      <HintPath>..\..\MedicalInventory\MainClass\bin\Debug\MainClass.dll</HintPath>
-    </Reference>
-    <Reference Include="Settings">
-      <HintPath>..\..\MedicalInventory\Settings\bin\Debug\Settings.dll</HintPath>
+      <HintPath>..\Authentification\bin\Debug\MainClass.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +50,12 @@
   <ItemGroup>
     <Compile Include="crud.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Settings\Settings.csproj">
+      <Project>{f669a5df-31b0-4e15-9ed8-e47f6de12245}</Project>
+      <Name>Settings</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
