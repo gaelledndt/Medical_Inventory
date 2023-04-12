@@ -203,7 +203,7 @@ namespace MainClass
                 if (c is TextBox)
                 {
                     TextBox tb = (TextBox)c;
-                    if(tb.Text == "" && tb.Enabled)
+                    if(tb.Text == "")
                     {
                         count++;
                         tb.BackColor = Color.Firebrick;
