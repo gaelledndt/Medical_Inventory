@@ -18,6 +18,8 @@ namespace MedicalInventory
             InitializeComponent();
         }
 
+        public static int edit = 0;
+
         private void Sample2_Load(object sender, EventArgs e)
         {
 
@@ -31,12 +33,14 @@ namespace MedicalInventory
 
         public virtual void addBtn_Click(object sender, EventArgs e)
         {
-
+            edit = 0;
+            mainClass.reset_disable(leftPanel);
         }
 
         public virtual void editBtn_Click(object sender, EventArgs e)
         {
-
+            edit = 1;
+            mainClass.enable(leftPanel);
         }
 
         public virtual void saveBtn_Click(object sender, EventArgs e)

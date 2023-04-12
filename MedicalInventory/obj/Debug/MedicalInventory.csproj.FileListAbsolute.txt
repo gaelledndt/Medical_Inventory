@@ -45,3 +45,5 @@ C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\Medi
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.exe
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.pdb
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.RolesWindow.resources
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\CRUD.dll
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\CRUD.pdb

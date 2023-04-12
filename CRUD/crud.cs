@@ -27,10 +27,12 @@ namespace CRUD
                 mainClass.con.Close();
 
             }
-            catch (Exception e) {
-
+            catch (Exception ex) {
+                mainClass.ShowMSG(ex.Message,"error");
                 throw;
             }
+            return result;
         }
     }
 }
+

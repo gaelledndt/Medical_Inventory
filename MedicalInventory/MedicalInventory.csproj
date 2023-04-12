@@ -36,6 +36,9 @@
     <Reference Include="Authentification">
       <HintPath>..\Authentification\bin\Debug\Authentification.dll</HintPath>
     </Reference>
+    <Reference Include="CRUD">
+      <HintPath>..\CRUD\bin\Debug\CRUD.dll</HintPath>
+    </Reference>
     <Reference Include="MainClass">
       <HintPath>..\MainClass\bin\Debug\MainClass.dll</HintPath>
     </Reference>

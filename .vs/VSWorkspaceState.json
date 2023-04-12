@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MedicalInventory"
   ],
-  "SelectedNode": "\\MedicalInventory.sln",
+  "SelectedNode": "\\MedicalInventory\\Sample2.cs",
   "PreviewInSolutionExplorer": false
 }

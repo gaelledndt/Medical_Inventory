@@ -42,6 +42,7 @@
             this.leftPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.rightPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -67,6 +68,11 @@
             // 
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Size = new System.Drawing.Size(862, 495);
+            // 
+            // rightPanel
+            // 
+            this.rightPanel.Location = new System.Drawing.Point(255, 0);
+            this.rightPanel.Size = new System.Drawing.Size(862, 595);
             // 
             // panel4
             // 
@@ -215,6 +221,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.rightPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
