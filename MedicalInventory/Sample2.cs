@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,32 @@ namespace MedicalInventory
         }
 
         private void Sample2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public virtual void backBtn_Click(object sender, EventArgs e)
+        {
+            HomeScreen homeScreen = new HomeScreen();
+            mainClass.openWin(homeScreen, MDI.ActiveForm, this);
+        }
+
+        public virtual void addBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public virtual void editBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public virtual void saveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public virtual void deleteBtn_Click(object sender, EventArgs e)
         {
 
         }

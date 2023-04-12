@@ -43,6 +43,7 @@
             // 
             // leftPanel
             // 
+            this.leftPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.leftPanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.leftPanel.Controls.Add(this.panel2);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -65,11 +66,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(30, 42);
+            this.label1.Location = new System.Drawing.Point(101, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "GSB Application";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // rightPanel
             // 
@@ -130,13 +132,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel rightPanel;
         public System.Windows.Forms.Panel leftPanel;
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel rightPanel;
     }
 }
 

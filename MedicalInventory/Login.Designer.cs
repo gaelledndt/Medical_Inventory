@@ -43,7 +43,7 @@
             this.leftPanel.Controls.Add(this.passwordLabel);
             this.leftPanel.Controls.Add(this.userTxt);
             this.leftPanel.Controls.Add(this.label5);
-            this.leftPanel.Size = new System.Drawing.Size(200, 605);
+            this.leftPanel.Size = new System.Drawing.Size(267, 605);
             this.leftPanel.Controls.SetChildIndex(this.panel2, 0);
             this.leftPanel.Controls.SetChildIndex(this.label5, 0);
             this.leftPanel.Controls.SetChildIndex(this.userTxt, 0);
@@ -53,11 +53,15 @@
             // 
             // panel2
             // 
-            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.Size = new System.Drawing.Size(267, 100);
             // 
             // panel1
             // 
-            this.panel1.Size = new System.Drawing.Size(920, 100);
+            this.panel1.Size = new System.Drawing.Size(853, 100);
+            // 
+            // panel3
+            // 
+            this.panel3.Size = new System.Drawing.Size(853, 505);
             // 
             // passwordTxt
             // 
@@ -114,6 +118,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 605);
+            this.ControlBox = false;
             this.Name = "Login";
             this.Text = "Login";
             this.leftPanel.ResumeLayout(false);

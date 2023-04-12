@@ -73,6 +73,12 @@
     <Compile Include="MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="RolesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RolesWindow.Designer.cs">
+      <DependentUpon>RolesWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RolesWindow.resx">
+      <DependentUpon>RolesWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sample.resx">
       <DependentUpon>Sample.cs</DependentUpon>
     </EmbeddedResource>

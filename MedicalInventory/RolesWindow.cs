@@ -1,5 +1,4 @@
-﻿using MainClass;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,16 @@ using System.Windows.Forms;
 
 namespace MedicalInventory
 {
-    public partial class HomeScreen : Sample
+    public partial class RolesWindow : Sample2
     {
-        public HomeScreen()
+        public RolesWindow()
         {
             InitializeComponent();
         }
 
-        private void rolesBtn_Click(object sender, EventArgs e)
+        private void rolesGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            RolesWindow roleWindow = new RolesWindow();
-            mainClass.openWin(roleWindow, MDI.ActiveForm, this);
+
         }
     }
 }

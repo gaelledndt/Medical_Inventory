@@ -44,3 +44,4 @@ C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\Medi
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.csproj.CopyComplete
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.exe
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.pdb
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.RolesWindow.resources
