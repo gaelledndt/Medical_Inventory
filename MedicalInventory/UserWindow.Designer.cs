@@ -33,6 +33,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.usersGV = new System.Windows.Forms.DataGridView();
+            this.snoGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventoryDBDataSet = new MedicalInventory.inventoryDBDataSet();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,17 +61,6 @@
             this.statusDD = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.usersTableAdapter = new MedicalInventory.inventoryDBDataSetTableAdapters.usersTableAdapter();
-            this.snoGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6.SuspendLayout();
             this.leftPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -182,167 +182,6 @@
             this.usersGV.TabIndex = 1;
             this.usersGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.rolesGV_CellClick);
             // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "users";
-            this.usersBindingSource.DataSource = this.inventoryDBDataSet;
-            // 
-            // inventoryDBDataSet
-            // 
-            this.inventoryDBDataSet.DataSetName = "inventoryDBDataSet";
-            this.inventoryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Enabled = false;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(46, 155);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Name";
-            // 
-            // nameTxt
-            // 
-            this.nameTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nameTxt.Location = new System.Drawing.Point(49, 173);
-            this.nameTxt.Name = "nameTxt";
-            this.nameTxt.Size = new System.Drawing.Size(141, 20);
-            this.nameTxt.TabIndex = 2;
-            this.nameTxt.TextChanged += new System.EventHandler(this.nameTxt_TextChanged);
-            // 
-            // usernameTxt
-            // 
-            this.usernameTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.usernameTxt.Location = new System.Drawing.Point(49, 221);
-            this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(141, 20);
-            this.usernameTxt.TabIndex = 4;
-            this.usernameTxt.TextChanged += new System.EventHandler(this.usernameTxt_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(46, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Username";
-            // 
-            // passwordTxt
-            // 
-            this.passwordTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.passwordTxt.Location = new System.Drawing.Point(49, 272);
-            this.passwordTxt.MaxLength = 30;
-            this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(141, 20);
-            this.passwordTxt.TabIndex = 6;
-            this.passwordTxt.UseSystemPasswordChar = true;
-            this.passwordTxt.TextChanged += new System.EventHandler(this.passwordTxt_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(46, 254);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Password";
-            // 
-            // phoneTxt
-            // 
-            this.phoneTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.phoneTxt.Location = new System.Drawing.Point(49, 321);
-            this.phoneTxt.MaxLength = 15;
-            this.phoneTxt.Name = "phoneTxt";
-            this.phoneTxt.Size = new System.Drawing.Size(141, 20);
-            this.phoneTxt.TabIndex = 8;
-            this.phoneTxt.TextChanged += new System.EventHandler(this.phoneTxt_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Enabled = false;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(46, 303);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Phone";
-            // 
-            // emailTxt
-            // 
-            this.emailTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.emailTxt.Location = new System.Drawing.Point(49, 369);
-            this.emailTxt.MaxLength = 50;
-            this.emailTxt.Name = "emailTxt";
-            this.emailTxt.Size = new System.Drawing.Size(141, 20);
-            this.emailTxt.TabIndex = 10;
-            this.emailTxt.TextChanged += new System.EventHandler(this.emailTxt_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Enabled = false;
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(46, 351);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Email";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Enabled = false;
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(46, 409);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Role";
-            // 
-            // roleDD
-            // 
-            this.roleDD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.roleDD.FormattingEnabled = true;
-            this.roleDD.Location = new System.Drawing.Point(49, 425);
-            this.roleDD.Name = "roleDD";
-            this.roleDD.Size = new System.Drawing.Size(141, 21);
-            this.roleDD.TabIndex = 12;
-            this.roleDD.SelectedIndexChanged += new System.EventHandler(this.roleDD_SelectedIndexChanged);
-            // 
-            // statusDD
-            // 
-            this.statusDD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.statusDD.FormattingEnabled = true;
-            this.statusDD.Items.AddRange(new object[] {
-            "Active",
-            "Inactif"});
-            this.statusDD.Location = new System.Drawing.Point(49, 477);
-            this.statusDD.Name = "statusDD";
-            this.statusDD.Size = new System.Drawing.Size(141, 21);
-            this.statusDD.TabIndex = 14;
-            this.statusDD.SelectedIndexChanged += new System.EventHandler(this.statusDD_SelectedIndexChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Enabled = false;
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(46, 461);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Status";
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
-            // 
             // snoGV
             // 
             this.snoGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -414,6 +253,167 @@
             this.roleName.Name = "roleName";
             this.roleName.ReadOnly = true;
             this.roleName.Visible = false;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "users";
+            this.usersBindingSource.DataSource = this.inventoryDBDataSet;
+            // 
+            // inventoryDBDataSet
+            // 
+            this.inventoryDBDataSet.DataSetName = "inventoryDBDataSet";
+            this.inventoryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Enabled = false;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(46, 155);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Nom";
+            // 
+            // nameTxt
+            // 
+            this.nameTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nameTxt.Location = new System.Drawing.Point(49, 173);
+            this.nameTxt.Name = "nameTxt";
+            this.nameTxt.Size = new System.Drawing.Size(141, 20);
+            this.nameTxt.TabIndex = 2;
+            this.nameTxt.TextChanged += new System.EventHandler(this.nameTxt_TextChanged);
+            // 
+            // usernameTxt
+            // 
+            this.usernameTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.usernameTxt.Location = new System.Drawing.Point(49, 221);
+            this.usernameTxt.Name = "usernameTxt";
+            this.usernameTxt.Size = new System.Drawing.Size(141, 20);
+            this.usernameTxt.TabIndex = 4;
+            this.usernameTxt.TextChanged += new System.EventHandler(this.usernameTxt_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(46, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Pseudo";
+            // 
+            // passwordTxt
+            // 
+            this.passwordTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.passwordTxt.Location = new System.Drawing.Point(49, 272);
+            this.passwordTxt.MaxLength = 30;
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.Size = new System.Drawing.Size(141, 20);
+            this.passwordTxt.TabIndex = 6;
+            this.passwordTxt.UseSystemPasswordChar = true;
+            this.passwordTxt.TextChanged += new System.EventHandler(this.passwordTxt_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(46, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Mot de passe";
+            // 
+            // phoneTxt
+            // 
+            this.phoneTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.phoneTxt.Location = new System.Drawing.Point(49, 321);
+            this.phoneTxt.MaxLength = 15;
+            this.phoneTxt.Name = "phoneTxt";
+            this.phoneTxt.Size = new System.Drawing.Size(141, 20);
+            this.phoneTxt.TabIndex = 8;
+            this.phoneTxt.TextChanged += new System.EventHandler(this.phoneTxt_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Enabled = false;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(46, 303);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Téléphone";
+            // 
+            // emailTxt
+            // 
+            this.emailTxt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.emailTxt.Location = new System.Drawing.Point(49, 369);
+            this.emailTxt.MaxLength = 50;
+            this.emailTxt.Name = "emailTxt";
+            this.emailTxt.Size = new System.Drawing.Size(141, 20);
+            this.emailTxt.TabIndex = 10;
+            this.emailTxt.TextChanged += new System.EventHandler(this.emailTxt_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Enabled = false;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(46, 351);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Email";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Enabled = false;
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(46, 409);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Rôle";
+            // 
+            // roleDD
+            // 
+            this.roleDD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.roleDD.FormattingEnabled = true;
+            this.roleDD.Location = new System.Drawing.Point(49, 425);
+            this.roleDD.Name = "roleDD";
+            this.roleDD.Size = new System.Drawing.Size(141, 21);
+            this.roleDD.TabIndex = 12;
+            this.roleDD.SelectedIndexChanged += new System.EventHandler(this.roleDD_SelectedIndexChanged);
+            // 
+            // statusDD
+            // 
+            this.statusDD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.statusDD.FormattingEnabled = true;
+            this.statusDD.Items.AddRange(new object[] {
+            "Active",
+            "Inactif"});
+            this.statusDD.Location = new System.Drawing.Point(49, 477);
+            this.statusDD.Name = "statusDD";
+            this.statusDD.Size = new System.Drawing.Size(141, 21);
+            this.statusDD.TabIndex = 14;
+            this.statusDD.SelectedIndexChanged += new System.EventHandler(this.statusDD_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Enabled = false;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(46, 461);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Status";
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
             // 
             // UserWindow
             // 
