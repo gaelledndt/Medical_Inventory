@@ -68,5 +68,10 @@ namespace MedicalInventory
                 passwordTxt.BackColor = Color.White;
             }
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -87,6 +87,7 @@
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel6.Location = new System.Drawing.Point(0, 55);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(862, 440);
@@ -193,6 +194,7 @@
             this.searchTxt.Name = "searchTxt";
             this.searchTxt.Size = new System.Drawing.Size(162, 20);
             this.searchTxt.TabIndex = 0;
+            this.searchTxt.TextChanged += new System.EventHandler(this.searchTxt_TextChanged);
             // 
             // backBtn
             // 
@@ -200,11 +202,11 @@
             this.backBtn.FlatAppearance.BorderSize = 0;
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.backBtn.Image = global::MedicalInventory.Properties.Resources.backHome;
             this.backBtn.Location = new System.Drawing.Point(0, 0);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(75, 100);
             this.backBtn.TabIndex = 1;
-            this.backBtn.Text = "Retour";
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 

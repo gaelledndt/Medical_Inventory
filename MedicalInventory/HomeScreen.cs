@@ -23,5 +23,11 @@ namespace MedicalInventory
             RolesWindow roleWindow = new RolesWindow();
             mainClass.openWin(roleWindow, MDI.ActiveForm, this);
         }
+
+        private void userBtn_Click(object sender, EventArgs e)
+        {
+            UserWindow userWindow = new UserWindow();
+            mainClass.openWin(userWindow, MDI.ActiveForm, this);
+        }
     }
 }

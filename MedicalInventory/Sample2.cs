@@ -52,5 +52,10 @@ namespace MedicalInventory
         {
 
         }
+
+        public virtual void searchTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

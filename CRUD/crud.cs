@@ -32,6 +32,7 @@ namespace CRUD
             return result;
         }
 
+        // For Roles
         public static void loadData (string proc, Hashtable hashtable, ListBox listBox, DataGridView dataGridView)
         {
             try
@@ -55,6 +56,33 @@ namespace CRUD
 
             }
             catch (Exception ex) 
+            {
+                mainClass.ShowMSG(ex.Message, "error");
+            }
+        }
+
+        // For Users
+        public static void loadList(string proc, Hashtable hashtable, ComboBox comboBox)
+        {
+            try
+            {
+                comboBox.Items.Clear();
+                SqlCommand cmd = new SqlCommand(proc, mainClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (DictionaryEntry item in hashtable)
+                {
+                    cmd.Parameters.AddWithValue(item.Key.ToString(), item.Value);
+                }
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                dataAdapter.Fill(dataTable);
+                comboBox.ValueMember = dataTable.Columns[0].ToString();
+                comboBox.DisplayMember = dataTable.Columns[1].ToString();
+                comboBox.DataSource = dataTable;
+
+
+            }
+            catch (Exception ex)
             {
                 mainClass.ShowMSG(ex.Message, "error");
             }

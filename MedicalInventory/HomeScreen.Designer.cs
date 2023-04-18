@@ -30,7 +30,7 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.rolesBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.userBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -81,7 +81,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.rolesBtn, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.userBtn, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.button5, 4, 0);
@@ -116,27 +116,28 @@
             this.rolesBtn.Name = "rolesBtn";
             this.rolesBtn.Size = new System.Drawing.Size(168, 92);
             this.rolesBtn.TabIndex = 0;
-            this.rolesBtn.Text = "Roles";
+            this.rolesBtn.Text = "Rôle";
             this.rolesBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rolesBtn.UseVisualStyleBackColor = true;
             this.rolesBtn.Click += new System.EventHandler(this.rolesBtn_Click);
             // 
-            // button2
+            // userBtn
             // 
-            this.button2.AutoSize = true;
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Location = new System.Drawing.Point(177, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 92);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Users";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.userBtn.AutoSize = true;
+            this.userBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.userBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userBtn.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.userBtn.FlatAppearance.BorderSize = 2;
+            this.userBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userBtn.ForeColor = System.Drawing.Color.Blue;
+            this.userBtn.Location = new System.Drawing.Point(177, 3);
+            this.userBtn.Name = "userBtn";
+            this.userBtn.Size = new System.Drawing.Size(168, 92);
+            this.userBtn.TabIndex = 1;
+            this.userBtn.Text = "Personnel";
+            this.userBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.userBtn.UseVisualStyleBackColor = true;
+            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
             // button3
             // 
@@ -154,6 +155,7 @@
             this.button3.Text = "btn";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
             // 
             // button4
             // 
@@ -171,6 +173,7 @@
             this.button4.Text = "btn";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             // 
             // button5
             // 
@@ -188,6 +191,7 @@
             this.button5.Text = "btn";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
             // 
             // button6
             // 
@@ -201,7 +205,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(168, 92);
             this.button6.TabIndex = 5;
-            this.button6.Text = "btn";
+            this.button6.Text = "Matériel";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -217,7 +221,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(168, 92);
             this.button7.TabIndex = 6;
-            this.button7.Text = "btn";
+            this.button7.Text = "Autres";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -237,6 +241,7 @@
             this.button8.Text = "btn";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
             // 
             // button9
             // 
@@ -254,6 +259,7 @@
             this.button9.Text = "btn";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Visible = false;
             // 
             // button10
             // 
@@ -271,6 +277,7 @@
             this.button10.Text = "btn";
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Visible = false;
             // 
             // panel4
             // 
@@ -286,6 +293,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 590);
+            this.ControlBox = false;
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.leftPanel.ResumeLayout(false);
@@ -306,7 +314,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button rolesBtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button userBtn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

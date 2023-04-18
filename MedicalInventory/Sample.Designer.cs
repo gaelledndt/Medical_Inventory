@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sample));
             this.leftPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.leftPanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.leftPanel.Controls.Add(this.panel2);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.leftPanel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
             this.leftPanel.Name = "leftPanel";
             this.leftPanel.Size = new System.Drawing.Size(261, 586);
@@ -119,6 +121,7 @@
             this.ClientSize = new System.Drawing.Size(1073, 586);
             this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.leftPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Sample";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Sample_Load);

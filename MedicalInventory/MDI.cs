@@ -19,11 +19,6 @@ namespace MedicalInventory
             InitializeComponent();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
        // string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\connect.txt";
         private void MDI_Load(object sender, EventArgs e)
         {
@@ -46,6 +41,23 @@ namespace MedicalInventory
             SettingsWindow se = new SettingsWindow();
             mainClass.openWin(se, MDI.ActiveForm);
 
+        }
+
+        private void déconnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            mainClass.openWin(login, MDI.ActiveForm);
+        }
+
+        private void changementDeSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            mainClass.openWin(login, MDI.ActiveForm);
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
