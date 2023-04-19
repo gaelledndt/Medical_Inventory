@@ -31,7 +31,6 @@ C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\Medi
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Sample.resources
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Sample2.resources
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.SettingsWindow.resources
-C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.UserWindow.resources
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.csproj.GenerateResource.cache
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.csproj.CoreCompileInputs.cache
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\MedicalInventory.exe.config
@@ -48,3 +47,5 @@ C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\bin\Debug\Sett
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.csproj.CopyComplete
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.exe
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.pdb
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Fournisseurs.resources
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Utilisateurs.resources

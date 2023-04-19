@@ -108,6 +108,12 @@
     <Compile Include="SettingsWindow.Designer.cs">
       <DependentUpon>SettingsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuppliersWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersWindow.Designer.cs">
+      <DependentUpon>SuppliersWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsWindow.resx">
       <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersWindow.resx">
+      <DependentUpon>SuppliersWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserWindow.resx">
       <DependentUpon>UserWindow.cs</DependentUpon>

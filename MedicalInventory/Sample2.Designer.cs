@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sample2));
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -202,10 +203,10 @@
             this.backBtn.FlatAppearance.BorderSize = 0;
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.backBtn.Image = global::MedicalInventory.Properties.Resources.backHome;
+            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
             this.backBtn.Location = new System.Drawing.Point(0, 0);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(75, 100);
+            this.backBtn.Size = new System.Drawing.Size(95, 100);
             this.backBtn.TabIndex = 1;
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);

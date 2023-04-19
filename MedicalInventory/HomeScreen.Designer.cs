@@ -34,7 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.supplierBtn = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -85,7 +85,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.button5, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.supplierBtn, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button8, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button9, 3, 1);
@@ -193,20 +193,21 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Visible = false;
             // 
-            // button6
+            // supplierBtn
             // 
-            this.button6.AutoSize = true;
-            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatAppearance.BorderSize = 2;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Blue;
-            this.button6.Location = new System.Drawing.Point(3, 101);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 92);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Matériel";
-            this.button6.UseVisualStyleBackColor = true;
+            this.supplierBtn.AutoSize = true;
+            this.supplierBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.supplierBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.supplierBtn.FlatAppearance.BorderSize = 2;
+            this.supplierBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierBtn.ForeColor = System.Drawing.Color.Blue;
+            this.supplierBtn.Location = new System.Drawing.Point(3, 101);
+            this.supplierBtn.Name = "supplierBtn";
+            this.supplierBtn.Size = new System.Drawing.Size(168, 92);
+            this.supplierBtn.TabIndex = 5;
+            this.supplierBtn.Text = "Fournisseurs";
+            this.supplierBtn.UseVisualStyleBackColor = true;
+            this.supplierBtn.Click += new System.EventHandler(this.supplierBtn_Click);
             // 
             // button7
             // 
@@ -221,7 +222,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(168, 92);
             this.button7.TabIndex = 6;
-            this.button7.Text = "Autres";
+            this.button7.Text = "Matériels";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -318,7 +319,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button supplierBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;

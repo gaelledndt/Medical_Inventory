@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace MedicalInventory
 {
-    public partial class UserWindow : Sample2
+    public partial class Utilisateurs : Sample2
     {
-        public UserWindow()
+        public Utilisateurs()
         {
             InitializeComponent();
         }
@@ -155,22 +155,27 @@ namespace MedicalInventory
 
             if (edit == 1)
             {
-                Hashtable hashtable = new Hashtable();
-                hashtable.Add("@ID", userID);
-                int x = crud.insert_update_delete("st_deleteUser", hashtable);
-
-                if (x > 0)
+                DialogResult dialogResult = MessageBox.Show("Souhaitez-vous réellement supprimer ?", "Question", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
                 {
 
-                    mainClass.ShowMSG(nameTxt.Text + " delete successfully into the system", "success");
-                    showData();
+                    Hashtable hashtable = new Hashtable();
+                    hashtable.Add("@ID", userID);
+                    int x = crud.insert_update_delete("st_deleteUser", hashtable);
 
+                    if (x > 0)
+                    {
+
+                        mainClass.ShowMSG(nameTxt.Text + " delete successfully into the system", "success");
+                        showData();
+
+                    }
+                    else
+                    {
+                        mainClass.ShowMSG("Unable to delete " + nameTxt.Text + " in the system", "success");
+                    }
+                    mainClass.reset_disable(leftPanel);
                 }
-                else
-                {
-                    mainClass.ShowMSG("Unable to delete " + nameTxt.Text + " in the system", "success");
-                }
-                mainClass.reset_disable(leftPanel);
             }
         }
 

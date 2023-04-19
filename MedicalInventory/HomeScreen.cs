@@ -26,8 +26,14 @@ namespace MedicalInventory
 
         private void userBtn_Click(object sender, EventArgs e)
         {
-            UserWindow userWindow = new UserWindow();
+            Utilisateurs userWindow = new Utilisateurs();
             mainClass.openWin(userWindow, MDI.ActiveForm, this);
+        }
+
+        private void supplierBtn_Click(object sender, EventArgs e)
+        {
+            Fournisseurs suppliersWindow = new Fournisseurs();
+            mainClass.openWin(suppliersWindow, MDI.ActiveForm, this);
         }
     }
 }

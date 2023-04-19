@@ -79,7 +79,7 @@ namespace CRUD
                 comboBox.ValueMember = dataTable.Columns[0].ToString();
                 comboBox.DisplayMember = dataTable.Columns[1].ToString();
                 comboBox.DataSource = dataTable;
-
+                comboBox.SelectedIndex = 1;
 
             }
             catch (Exception ex)

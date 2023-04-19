@@ -86,6 +86,7 @@ namespace MainClass
                 else if (c is DateTimePicker)
                 {
                     DateTimePicker dt = (DateTimePicker)c;
+                    dt.Value = DateTime.Today;
                     dt.Enabled = false;
                 }
             }
@@ -112,35 +113,40 @@ namespace MainClass
                 {
                     TextBox tb = (TextBox)c;
                     tb.Text = "";
-                    tb.Enabled = true;
+                    tb.Enabled = false;
+                    tb.BackColor = Color.White;
                 }
                 // ComboBox Reset
                 else if (c is ComboBox)
                 {
                     ComboBox cb = (ComboBox)c;
                     cb.SelectedIndex = -1;
-                    cb.Enabled = true;
+                    cb.Enabled = false;
+                    cb.BackColor = Color.White;
                 }
                 // RadioButton Reset
                 else if (c is RadioButton)
                 {
                     RadioButton rb = (RadioButton)c;
                     rb.Checked = false;
-                    rb.Enabled = true;
+                    rb.Enabled = false;
+                    rb.BackColor = Color.White;
                 }
                 // CheckBox Reset
                 else if (c is CheckBox)
                 {
                     CheckBox cb = (CheckBox)c;
                     cb.Checked = false;
-                    cb.Enabled = true;
+                    cb.Enabled = false;
+                    cb.BackColor = Color.White;
                 }
                 // DateTimePicker Reset
                 else if (c is DateTimePicker)
                 {
                     DateTimePicker dt = (DateTimePicker)c;
                     dt.Value = DateTime.Now;
-                    dt.Enabled = true;
+                    dt.Enabled = false;
+                    dt.BackColor = Color.White;
                 }
             }
         }
@@ -155,6 +161,7 @@ namespace MainClass
                     TextBox tb = (TextBox)c;
                     tb.Text = "";
                     tb.Enabled = false;
+                    tb.BackColor = Color.White;
                 }
                 // ComboBox Reset
                 else if (c is ComboBox)
@@ -162,6 +169,7 @@ namespace MainClass
                     ComboBox cb = (ComboBox)c;
                     cb.SelectedIndex = -1;
                     cb.Enabled = false;
+                    cb.BackColor = Color.White;
                 }
                 // RadioButton Reset
                 else if (c is RadioButton)
@@ -169,6 +177,7 @@ namespace MainClass
                     RadioButton rb = (RadioButton)c;
                     rb.Checked = false;
                     rb.Enabled = false;
+
                 }
                 // CheckBox Reset
                 else if (c is CheckBox)
