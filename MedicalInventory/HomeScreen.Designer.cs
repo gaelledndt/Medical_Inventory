@@ -296,7 +296,7 @@
             this.ClientSize = new System.Drawing.Size(1138, 590);
             this.ControlBox = false;
             this.Name = "HomeScreen";
-            this.Text = "HomeScreen";
+            this.Text = "Accueil";
             this.leftPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
