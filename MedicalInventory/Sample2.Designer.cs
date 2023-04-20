@@ -186,7 +186,7 @@
             this.groupBox1.Size = new System.Drawing.Size(168, 49);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Search";
+            this.groupBox1.Text = "Recherche";
             // 
             // searchTxt
             // 

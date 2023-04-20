@@ -47,7 +47,7 @@ namespace MedicalInventory
         {
             if(mainClass.validate(leftPanel) > 0)
             {
-                mainClass.ShowMSG("Fields with RED are mandatory","error");
+                mainClass.ShowMSG("Informations obligatoires manquantes", "error");
             }
             else
             {
@@ -60,7 +60,7 @@ namespace MedicalInventory
                     if (x > 0)
                     {
 
-                        mainClass.ShowMSG(roleTxt.Text + " added successfully into the system", "success");
+                        mainClass.ShowMSG(roleTxt.Text + " a été ajouté avec succès au système", "success");
                         Hashtable hashtable1 = new Hashtable();
                         ListBox lb = new ListBox();
                         lb.Items.Add(roleIdGV);
@@ -70,7 +70,7 @@ namespace MedicalInventory
                     }
                     else
                     {
-                        mainClass.ShowMSG("Unable to add " + roleTxt.Text + " in the system", "error");
+                        mainClass.ShowMSG("Impossibilité d'ajouter " + roleTxt.Text + " au system", "error");
                     }
                     mainClass.reset_disable(leftPanel);
 
@@ -85,12 +85,12 @@ namespace MedicalInventory
                     if (x > 0)
                     {
 
-                        mainClass.ShowMSG(roleTxt.Text + " updated successfully into the system", "success");
+                        mainClass.ShowMSG(roleTxt.Text + "a été mit à jour avec succès", "success");
                         showData();
                     }
                     else
                     {
-                        mainClass.ShowMSG("Unable to update " + roleTxt.Text + " in the system", "success");
+                        mainClass.ShowMSG("Impossible de mettre à jour " + roleTxt.Text + " au système", "success");
                     }
                     mainClass.reset_disable(leftPanel);
                 }
@@ -121,12 +121,12 @@ namespace MedicalInventory
                 if (x > 0)
                 {
 
-                    mainClass.ShowMSG(roleTxt.Text + " delete successfully into the system", "success");
+                    mainClass.ShowMSG(roleTxt.Text + " a été supprimé avec succès du système", "success");
                     showData();
                 }
                 else
                 {
-                    mainClass.ShowMSG("Unable to delete " + roleTxt.Text + " in the system", "success");
+                    mainClass.ShowMSG("Impossibilité de mettre à jour " + roleTxt.Text + " dans le système", "success");
                 }
                 mainClass.reset_disable(leftPanel);
             }

@@ -68,7 +68,7 @@ namespace MedicalInventory
         {
             if (mainClass.validate(leftPanel) > 0)
             {
-                mainClass.ShowMSG("Fileds with Red are mandatory", "error");
+                mainClass.ShowMSG("Informations obligatoires manquantes", "error");
             }
             else
             {

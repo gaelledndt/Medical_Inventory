@@ -43,7 +43,7 @@ namespace MedicalInventory
         {
             if (mainClass.validate(leftPanel) > 0)
             {
-                mainClass.ShowMSG("Field with RED ara mandatory", "error");
+                mainClass.ShowMSG("Informations obligatoires manquantes", "error");
             }
             else
             {
@@ -51,14 +51,14 @@ namespace MedicalInventory
                 if (isCB.Checked)
                 {
                     settings.saveFile(serverTxt.Text, databaseTxt.Text);
-                    mainClass.ShowMSG("Settings saved succesfully", "success");
+                    mainClass.ShowMSG("Les paramètres ont été enregistré avec succès", "success");
                     mainClass.openWin(lo, MDI.ActiveForm, this);
 
                 }
                 else
                 {
                     settings.saveFile(serverTxt.Text, databaseTxt.Text, userTxt.Text, passwordTxt.Text);
-                    mainClass.ShowMSG("Settings saved succesfully", "success");
+                    mainClass.ShowMSG("Les paramètres ont été sauvegarder avec succès", "success");
                     mainClass.openWin(lo, MDI.ActiveForm, this);
 
                 }

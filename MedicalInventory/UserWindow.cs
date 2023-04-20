@@ -63,11 +63,11 @@ namespace MedicalInventory
 
             if (x > 0)
             {
-                mainClass.ShowMSG(nameTxt.Text + " added successfully", "success");
+                mainClass.ShowMSG(nameTxt.Text + " ajouter avec succès", "success");
             }
             else
             {
-                mainClass.ShowMSG("Unable to add " + nameTxt.Text, "error");
+                mainClass.ShowMSG("Impossibilité d'ajouter " + nameTxt.Text, "error");
             }
 
         }
@@ -76,7 +76,7 @@ namespace MedicalInventory
 
             if(mainClass.validate(leftPanel) > 0)
             {
-                mainClass.ShowMSG("Fields with Red are mandatory", "error");
+                mainClass.ShowMSG("Informations obligatoires manquantes", "error");
             }
             else
             {
@@ -104,11 +104,11 @@ namespace MedicalInventory
 
                     if (x > 0)
                     {
-                        mainClass.ShowMSG(nameTxt.Text + " added successfully", "success");
+                        mainClass.ShowMSG(nameTxt.Text + " ajouter avec succès", "success");
                     }
                     else
                     {
-                        mainClass.ShowMSG("Unable to add " + nameTxt.Text, "error");
+                        mainClass.ShowMSG("Impossibilité d'ajouter " + nameTxt.Text, "error");
                     }
                 }
 
@@ -136,13 +136,13 @@ namespace MedicalInventory
 
                     if (x > 0)
                     {
-                        mainClass.ShowMSG(nameTxt.Text + " updated successfully", "success");
+                        mainClass.ShowMSG(nameTxt.Text + " a été mis à jour avec succès", "success");
                         showData();
                         
                     }
                     else
                     {
-                        mainClass.ShowMSG("Unable to updated " + nameTxt.Text, "error");
+                        mainClass.ShowMSG("Impossibilité de mettre à jour " + nameTxt.Text, "error");
                     }
                     mainClass.reset_disable(leftPanel);
                 }
@@ -166,13 +166,13 @@ namespace MedicalInventory
                     if (x > 0)
                     {
 
-                        mainClass.ShowMSG(nameTxt.Text + " delete successfully into the system", "success");
+                        mainClass.ShowMSG(nameTxt.Text + " a été supprimé avec succès du système", "success");
                         showData();
 
                     }
                     else
                     {
-                        mainClass.ShowMSG("Unable to delete " + nameTxt.Text + " in the system", "success");
+                        mainClass.ShowMSG("Impossibilité de supprimer " + nameTxt.Text + " du système", "success");
                     }
                     mainClass.reset_disable(leftPanel);
                 }

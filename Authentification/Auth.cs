@@ -54,7 +54,7 @@ namespace authentification
                 else
                 {
                     flag = false;
-                    mainClass.ShowMSG("Invalid username or password", "error");
+                    mainClass.ShowMSG("L'identifiant ou le mot de passe est erroné", "error");
                 }
 
                 mainClass.con.Close();

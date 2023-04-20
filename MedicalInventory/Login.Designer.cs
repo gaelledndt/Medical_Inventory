@@ -108,7 +108,7 @@
             this.userTxt.Name = "userTxt";
             this.userTxt.Size = new System.Drawing.Size(100, 26);
             this.userTxt.TabIndex = 10;
-            this.userTxt.Text = "gaelle";
+            this.userTxt.Text = "gabrielle";
             this.userTxt.TextChanged += new System.EventHandler(this.userTxt_TextChanged);
             // 
             // usernameLabel
