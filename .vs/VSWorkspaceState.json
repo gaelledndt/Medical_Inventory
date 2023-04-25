@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MedicalInventory"
+    "\\MedicalInventory",
+    "\\MedicalInventory\\Windows"
   ],
-  "SelectedNode": "\\MedicalInventory\\UserWindow.cs",
+  "SelectedNode": "\\MedicalInventory\\Windows\\SuppliersWindow.cs",
   "PreviewInSolutionExplorer": false
 }
