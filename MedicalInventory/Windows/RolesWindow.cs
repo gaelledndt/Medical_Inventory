@@ -144,5 +144,10 @@ namespace MedicalInventory
                 roleTxt.Text = row.Cells[2].Value.ToString();
             }
         }
+
+        public override void viewBtn_Click(object sender, EventArgs e)
+        {
+            showData();
+        }
     }
 }

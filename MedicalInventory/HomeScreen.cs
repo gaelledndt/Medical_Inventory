@@ -1,4 +1,6 @@
 ﻿using MainClass;
+using MedicalInventory.Windows;
+using MedicalInventory.Windows.Accounts;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +36,24 @@ namespace MedicalInventory
         {
             Fournisseurs suppliersWindow = new Fournisseurs();
             mainClass.openWin(suppliersWindow, MDI.ActiveForm, this);
+        }
+    
+         private void accountTypeBtn_Click(object sender, EventArgs e)
+         {
+             AccountsTypeWindow accountTypeWindow = new AccountsTypeWindow();   
+             mainClass.openWin(accountTypeWindow, MDI.ActiveForm, this);
+         }
+
+        private void accountsBtn_Click(object sender, EventArgs e)
+        {
+            AccountsWindow accountsWindow = new AccountsWindow();
+            mainClass.openWin(accountsWindow, MDI.ActiveForm, this);
+        }
+
+        private void purchaseInvoiceBtn_Click(object sender, EventArgs e)
+        {
+            PurchaseInvoiceWindow purchaseInvoiceWindow = new PurchaseInvoiceWindow();
+            mainClass.openWin(purchaseInvoiceWindow, MDI.ActiveForm, this);
         }
     }
 }

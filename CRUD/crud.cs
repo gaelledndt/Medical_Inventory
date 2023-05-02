@@ -26,6 +26,9 @@ namespace CRUD
 
             }
             catch (Exception ex) {
+                if (mainClass.con.State == ConnectionState.Open) {
+                mainClass.con.Close();
+                }
                 mainClass.ShowMSG(ex.Message,"error");
                 throw;
             }

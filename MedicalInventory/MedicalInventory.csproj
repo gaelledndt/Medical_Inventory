@@ -82,6 +82,24 @@
     <Compile Include="MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Accounts\AccountsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Accounts\AccountsWindow.Designer.cs">
+      <DependentUpon>AccountsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Accounts\AccountsTypeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Accounts\AccountsTypeWindow.Designer.cs">
+      <DependentUpon>AccountsTypeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PurchaseInvoiceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\PurchaseInvoiceWindow.Designer.cs">
+      <DependentUpon>PurchaseInvoiceWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\RolesWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +158,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Windows\Accounts\AccountsWindow.resx">
+      <DependentUpon>AccountsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Accounts\AccountsTypeWindow.resx">
+      <DependentUpon>AccountsTypeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\PurchaseInvoiceWindow.resx">
+      <DependentUpon>PurchaseInvoiceWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\RolesWindow.resx">
       <DependentUpon>RolesWindow.cs</DependentUpon>
     </EmbeddedResource>

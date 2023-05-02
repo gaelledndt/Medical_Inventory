@@ -31,14 +31,15 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.rolesBtn = new System.Windows.Forms.Button();
             this.userBtn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.accountTypeBtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.supplierBtn = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.accountsBtn = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.purchaseInvoiceBtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.leftPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,14 +83,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.rolesBtn, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.userBtn, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.accountTypeBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.button5, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.supplierBtn, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.accountsBtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button9, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.button10, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.purchaseInvoiceBtn, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -100,6 +102,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(874, 490);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -139,23 +142,23 @@
             this.userBtn.UseVisualStyleBackColor = true;
             this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
-            // button3
+            // accountTypeBtn
             // 
-            this.button3.AutoSize = true;
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(351, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 92);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "btn";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
+            this.accountTypeBtn.AutoSize = true;
+            this.accountTypeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.accountTypeBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accountTypeBtn.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.accountTypeBtn.FlatAppearance.BorderSize = 2;
+            this.accountTypeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountTypeBtn.ForeColor = System.Drawing.Color.Blue;
+            this.accountTypeBtn.Location = new System.Drawing.Point(351, 3);
+            this.accountTypeBtn.Name = "accountTypeBtn";
+            this.accountTypeBtn.Size = new System.Drawing.Size(168, 92);
+            this.accountTypeBtn.TabIndex = 2;
+            this.accountTypeBtn.Text = "Type de compte fournisseur";
+            this.accountTypeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.accountTypeBtn.UseVisualStyleBackColor = true;
+            this.accountTypeBtn.Click += new System.EventHandler(this.accountTypeBtn_Click);
             // 
             // button4
             // 
@@ -226,23 +229,23 @@
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // accountsBtn
             // 
-            this.button8.AutoSize = true;
-            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.button8.FlatAppearance.BorderSize = 2;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Blue;
-            this.button8.Location = new System.Drawing.Point(351, 101);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(168, 92);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "btn";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Visible = false;
+            this.accountsBtn.AutoSize = true;
+            this.accountsBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.accountsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accountsBtn.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
+            this.accountsBtn.FlatAppearance.BorderSize = 2;
+            this.accountsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountsBtn.ForeColor = System.Drawing.Color.Blue;
+            this.accountsBtn.Location = new System.Drawing.Point(351, 101);
+            this.accountsBtn.Name = "accountsBtn";
+            this.accountsBtn.Size = new System.Drawing.Size(168, 92);
+            this.accountsBtn.TabIndex = 7;
+            this.accountsBtn.Text = "Compte";
+            this.accountsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.accountsBtn.UseVisualStyleBackColor = true;
+            this.accountsBtn.Click += new System.EventHandler(this.accountsBtn_Click);
             // 
             // button9
             // 
@@ -280,6 +283,19 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Visible = false;
             // 
+            // purchaseInvoiceBtn
+            // 
+            this.purchaseInvoiceBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.purchaseInvoiceBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchaseInvoiceBtn.ForeColor = System.Drawing.Color.Blue;
+            this.purchaseInvoiceBtn.Location = new System.Drawing.Point(3, 199);
+            this.purchaseInvoiceBtn.Name = "purchaseInvoiceBtn";
+            this.purchaseInvoiceBtn.Size = new System.Drawing.Size(168, 92);
+            this.purchaseInvoiceBtn.TabIndex = 10;
+            this.purchaseInvoiceBtn.Text = "Factures produits";
+            this.purchaseInvoiceBtn.UseVisualStyleBackColor = true;
+            this.purchaseInvoiceBtn.Click += new System.EventHandler(this.purchaseInvoiceBtn_Click);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.tableLayoutPanel1);
@@ -316,13 +332,14 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button rolesBtn;
         private System.Windows.Forms.Button userBtn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button accountTypeBtn;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button supplierBtn;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button accountsBtn;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button purchaseInvoiceBtn;
     }
 }

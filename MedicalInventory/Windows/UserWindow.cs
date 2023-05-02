@@ -323,7 +323,12 @@ namespace MedicalInventory
             else
             {
                 //statusDD .BackColor = Color.Black;
+                
             }
+        }
+        public override void viewBtn_Click(object sender, EventArgs e)
+        {
+            showData();
         }
 
     }

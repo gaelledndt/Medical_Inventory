@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\MedicalInventory",
-    "\\MedicalInventory\\Windows"
+    "\\MedicalInventory\\Samples",
+    "\\MedicalInventory\\Windows",
+    "\\MedicalInventory\\Windows\\Accounts"
   ],
-  "SelectedNode": "\\MedicalInventory\\Windows\\SuppliersWindow.cs",
+  "SelectedNode": "\\MedicalInventory\\Windows\\Accounts\\AccountsTypeWindow.cs",
   "PreviewInSolutionExplorer": false
 }

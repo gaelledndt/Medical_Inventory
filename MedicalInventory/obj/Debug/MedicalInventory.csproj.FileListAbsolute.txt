@@ -49,3 +49,6 @@ C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\Medi
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.pdb
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Fournisseurs.resources
 C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Utilisateurs.resources
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Windows.Accounts.AccountsTypeWindow.resources
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.AccountsWindow.resources
+C:\Users\Gaëlle\Documents\PPE\medical_inventory\MedicalInventory\obj\Debug\MedicalInventory.Windows.PurchaseInvoiceWindow.resources

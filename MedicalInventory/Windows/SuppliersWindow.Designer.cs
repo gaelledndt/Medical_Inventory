@@ -43,12 +43,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.supplierGV = new System.Windows.Forms.DataGridView();
             this.snoGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierIdGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.leftPanel.SuspendLayout();
@@ -227,12 +227,12 @@
             this.supplierGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.supplierGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.snoGV,
-            this.addressGV,
-            this.statusGV,
             this.supplierIdGV,
             this.nameGV,
+            this.emailGV,
             this.phoneGV,
-            this.emailGV});
+            this.addressGV,
+            this.statusGV});
             this.supplierGV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.supplierGV.Location = new System.Drawing.Point(0, 0);
             this.supplierGV.MultiSelect = false;
@@ -260,18 +260,6 @@
             this.snoGV.ReadOnly = true;
             this.snoGV.Width = 39;
             // 
-            // addressGV
-            // 
-            this.addressGV.HeaderText = "Address";
-            this.addressGV.Name = "addressGV";
-            this.addressGV.ReadOnly = true;
-            // 
-            // statusGV
-            // 
-            this.statusGV.HeaderText = "Status";
-            this.statusGV.Name = "statusGV";
-            this.statusGV.ReadOnly = true;
-            // 
             // supplierIdGV
             // 
             this.supplierIdGV.HeaderText = "SupplierID";
@@ -285,17 +273,29 @@
             this.nameGV.Name = "nameGV";
             this.nameGV.ReadOnly = true;
             // 
+            // emailGV
+            // 
+            this.emailGV.HeaderText = "Email";
+            this.emailGV.Name = "emailGV";
+            this.emailGV.ReadOnly = true;
+            // 
             // phoneGV
             // 
             this.phoneGV.HeaderText = "Téléphone";
             this.phoneGV.Name = "phoneGV";
             this.phoneGV.ReadOnly = true;
             // 
-            // emailGV
+            // addressGV
             // 
-            this.emailGV.HeaderText = "Email";
-            this.emailGV.Name = "emailGV";
-            this.emailGV.ReadOnly = true;
+            this.addressGV.HeaderText = "Address";
+            this.addressGV.Name = "addressGV";
+            this.addressGV.ReadOnly = true;
+            // 
+            // statusGV
+            // 
+            this.statusGV.HeaderText = "Status";
+            this.statusGV.Name = "statusGV";
+            this.statusGV.ReadOnly = true;
             // 
             // Fournisseurs
             // 
@@ -336,13 +336,13 @@
         private System.Windows.Forms.TextBox nameTxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.DataGridView supplierGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn snoGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplierIdGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailGV;
-        public System.Windows.Forms.DataGridView supplierGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusGV;
     }
 }

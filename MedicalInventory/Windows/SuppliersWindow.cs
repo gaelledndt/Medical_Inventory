@@ -44,6 +44,28 @@ namespace MedicalInventory
             }
 
         }
+        /* Show Data pour la barre de recherche*/
+        private void showData(string data)
+        {
+            try
+            {
+                Hashtable hashtable = new Hashtable();
+                hashtable.Add("@data",data);
+                ListBox listBox = new ListBox();
+                listBox.Items.Add(supplierIdGV);
+                listBox.Items.Add(nameGV);
+                listBox.Items.Add(phoneGV);
+                listBox.Items.Add(addressGV);
+                listBox.Items.Add(emailGV);
+                listBox.Items.Add(statusGV);
+                crud.loadData("st_searchSupplier", hashtable, listBox, supplierGV);
+            }
+            catch (Exception ex)
+            {
+                mainClass.ShowMSG(ex.Message, "error");
+            }
+
+        }
         /* BOUTON - Ajouter */
         public override void addBtn_Click(object sender, EventArgs e)
         {
@@ -234,7 +256,11 @@ namespace MedicalInventory
         {
             if (searchTxt.Text != "")
             {
-
+                showData(searchTxt.Text);
+            }
+            else
+            {
+                showData();
             }
         }
 
@@ -281,6 +307,11 @@ namespace MedicalInventory
                 statusDD.BackColor = Color.Red;
 
             }
+        }
+
+        public override void viewBtn_Click(object sender, EventArgs e)
+        {
+            showData();
         }
 
     }
