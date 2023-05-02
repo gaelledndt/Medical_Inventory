@@ -51,6 +51,11 @@ namespace MainClass
                     DateTimePicker dt = (DateTimePicker)c;
                     dt.Enabled = true;
                 }
+                else if (c is Button)
+                {
+                    Button bt = (Button)c;
+                    bt.Enabled = true;
+                }
             }
         }
 
@@ -88,6 +93,13 @@ namespace MainClass
                     DateTimePicker dt = (DateTimePicker)c;
                     dt.Value = DateTime.Today;
                     dt.Enabled = false;
+                }
+
+                // Button Reset
+                else if (c is Button)
+                {
+                    Button bt = (Button)c;
+                    bt.Enabled = false;
                 }
             }
         }
@@ -148,6 +160,13 @@ namespace MainClass
                     dt.Enabled = false;
                     dt.BackColor = Color.White;
                 }
+
+                // Button Reset
+                else if (c is Button)
+                {
+                    Button bt = (Button)c;
+                    bt.Enabled = false;
+                }
             }
         }
 
@@ -192,6 +211,13 @@ namespace MainClass
                     DateTimePicker dt = (DateTimePicker)c;
                     dt.Value = DateTime.Now;
                     dt.Enabled = false;
+                }
+
+                // Button Reset
+                else if (c is Button)
+                {
+                    Button bt = (Button)c;
+                    bt.Enabled = false;
                 }
             }
         }
@@ -257,7 +283,21 @@ namespace MainClass
                         tb.BackColor = Color.White;
                     }
                 }
-             
+
+                if(c is DateTimePicker)
+                {
+                    DateTimePicker dt = (DateTimePicker)c;
+                    if(dt.Value < DateTime.Today && dt.AllowDrop == false)
+                    {
+                        count++;
+                        dt.BackColor = Color.Firebrick;
+                    }
+                    else
+                    {
+                        dt.BackColor = Color.White;
+                    }
+                }
+            
             }
             return count;
         }
